@@ -1,18 +1,25 @@
-.header {
+* {
+    box-sizing: border-box;
 }
 
-.topnav {
-    background-color: azure;
-    overflow: hidden;
-    float: left;
-    color: rgb(255, 0, 0);
-    text-align: center;
-    padding: 10px, 10px;
-    text-decoration: solid;
-    font-size: 20px;
+.header {
 }
 
 .topnav a:hover {
     background-color: black;
     color: azure;
 }
+
+.about-me, .projects, .contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
