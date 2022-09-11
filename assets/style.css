@@ -3,6 +3,17 @@
 }
 
 .header {
+    color: white;
+    text-align: center;
+}
+
+.background-top {
+    background-image: url(./IMG_9611.jpeg);
+    background-color: white;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .topnav a:hover {
@@ -17,7 +28,7 @@
     overflow: hidden;
     background-color: #333;
     float: left;
-    display: inline-block;
+    display: inline;
     color: white;
     text-align: center;
     padding: 14px 16px;
