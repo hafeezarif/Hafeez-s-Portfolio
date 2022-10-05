@@ -1,67 +1,99 @@
 * {
     box-sizing: border-box;
-}
-
+  }
+  
 body {
-    margin: 0px;
-}
-
-h2,h3,h4 {
-    font-size: 25px;
-    color: black;
-    border-style: solid;
-
-}
-
-.header {
-    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+  }
+  
+header {
+    padding: 40px;
     text-align: center;
-    padding-top: 25px;
-}
-
-.headersubtext {
-    color: white;
-    text-align: center;
-    margin-top: -20px;
-}
-
-.background-top {
-    background-image: url(./IMG_9611\ \(1\).jpeg);
-    background-color: white;
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.topnav {
+    background: rgb(65, 48, 101);
+    color: #fff;
+    font-size: 20px;
+  }
+  
+nav {
+    display: flex;
     overflow: hidden;
-    background-color: #333;
+    background-color: #e6d1fd;
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.topnav a:hover {
-    background-color: black;
-    color: azure;
-}
-
-.about-me, .projects, .contact {
+  }
+  
+nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
     float: left;
     display: block;
+  }
+
+nav a:hover {
+    background-color: #333;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.mainaboutme {
-    color: black;
-    margin-top: 500px;
-}
-
+  }
+  
+main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+section {
+    flex: 3;
+    background-color: rgb(237, 234, 234);
+    padding: 20px;
+  }
+  
 .aboutmecontext {
-    font-size: 13px;
-    text-align: center;
+    font-size: 28px;
 }
+
+.contactcontext {
+    font-size: 28px;
+}
+
+.imageone {
+    width: 100%;
+    height: 83%;
+    border: 1px solid black;
+  }
+  
+.otterimage {
+    width: 55%;
+    height: auto;
+    border: 5px solid black;
+  }
+
+.Psychimage {
+    width: 40%;
+    height: auto;
+    border: 3px solid black;
+  }
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(65, 48, 101);
+    color: #fff;
+  }
+  
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    aside {
+      order: 2;
+    }
+    header {
+    }
+    nav,
+    footer {
+    }
+  }
+  
