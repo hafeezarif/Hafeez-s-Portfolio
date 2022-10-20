@@ -75,6 +75,15 @@ section {
     border: 3px solid black;
   }
 
+.SS1 {
+  margin-top: 10px;
+  width: 40%;
+  height: auto;
+  border: 3px solid black;
+}
+
+
+
 footer {
     padding: 20px;
     text-align: center;
